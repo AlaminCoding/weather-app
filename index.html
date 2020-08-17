@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Kurale&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="temp">
+        <img
+          src="img/rain.png"
+          alt="Rain Icon"
+          class="day-icon"
+          id="day-icon"
+        />
+        <h2 id="day-type"></h2>
+        <p id="city-name"><span id="city">Dhaka</span> City</p>
+        <h1 id="temperature"><span id="temp-cel"></span> &#176C</h1>
+        <input type="text" placeholder="Search another city" id="input-city"><br>
+        <button class="search-btn" id="search-btn">SEARCH</button>
+      </div>
+
+      <div class="other">
+        <div class="other-info">
+          <img src="img/humidity.png" alt="Humidity Icon">
+          <div>
+            <p>Humidity</p>
+            <h2><span id="h-value"></span> %</h2>
+          </div>
+        </div>
+        <div class="other-info">
+          <img src="img/pressure.png" alt="pressure Icon">
+          <div>
+            <p>Atmospheric Pressure</p>
+            <h2><span id="a-value"></span> hPa</h2>
+          </div>
+        </div>
+        <div class="other-info">
+          <img src="img/rain-chance.png" alt="rain Icon">
+          <div>
+            <p>Rain Volume</p>
+            <h2><span id="r-value"></span> mm</h2>
+          </div>
+        </div>
+        <div class="other-info">
+          <img src="img/wind.png" alt="rain Icon">
+          <div>
+            <p>Wind Speed</p>
+            <h2><span id="w-value"></span> m/s</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="custom.js"></script>
+  </body>
+</html>
